@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CF Escrow</title>
+    <script>
+      const escrow = new URLSearchParams(location.search).get("escrow");
+      const base = location.href.replace(/[^/]*$/, "");
+      location.replace(base + "index.html" + (escrow ? "?escrow=" + escrow : ""));
+    </script>
+  </head>
+  <body></body>
+</html>

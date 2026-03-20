@@ -1,0 +1,14 @@
+{
+  "name": "test-tokens-scripts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "initialize": "node initialize.js",
+    "mint": "node mint.js",
+    "fund": "node fund.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "@solana/spl-token": "^0.4.6"
+  }
+}

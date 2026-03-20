@@ -1,0 +1,23 @@
+[package]
+name = "test-tokens-program"
+description = "test-tokens on-chain program"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+repository.workspace = true
+readme.workspace = true
+keywords.workspace = true
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "test_tokens_program"
+doctest = false
+
+[dependencies]
+test-tokens-api = { workspace = true }
+steel = { workspace = true }
+solana-program = { workspace = true }
+spl-token = { workspace = true }
+spl-associated-token-account = { workspace = true }
