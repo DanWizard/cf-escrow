@@ -1,2 +1,27 @@
-target
-test-ledger
+# ── Rust / Cargo ──────────────────────────────────────────────────────────────
+target/
+
+# ── Solana ────────────────────────────────────────────────────────────────────
+test-ledger/
+*.so
+# Deployment keypairs — never commit private keys
+deploy/
+**/*-keypair.json
+# Keep program keypairs out (they contain private keys)
+**/program-keypair.json
+
+# ── Node / JS ─────────────────────────────────────────────────────────────────
+node_modules/
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editors ───────────────────────────────────────────────────────────────────
+.idea/
+*.iml
